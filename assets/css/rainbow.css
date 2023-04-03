@@ -23,6 +23,15 @@ https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-c
     background-size: 400% 100%;
 }
 
+.rainbow_text_animated2 {
+    background: linear-gradient(to right, #3D3D3D, #4F4F4F , #A5A5A5, #D3D3D3, #A5A5A5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
 @keyframes rainbow_animation {
     0%,100% {
         background-position: 0 0;
