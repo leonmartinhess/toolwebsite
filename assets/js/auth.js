@@ -41,13 +41,17 @@ userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
 
 
 
-			document.getElementById("login").style.display = 'none';
+			document.getElementById('login').style.display = 'none'
             function showSignup() {
-                document.getElementById("signup").style.display = 'block';
-                document.getElementById("login").style.display = 'none';
+                document.getElementById('signup-button').className = 'button fit primary'
+                document.getElementById('login-button').className = 'button fit'
+                document.getElementById('signup').style.display = 'block'
+                document.getElementById('login').style.display = 'none'
             }
 
             function showLogin() {
-                document.getElementById("login").style.display = 'block';
-                document.getElementById("signup").style.display = 'none';
+                document.getElementById('signup-button').className = 'button fit'
+                document.getElementById('login-button').className = 'button fit primary'
+                document.getElementById('login').style.display = 'block'
+                document.getElementById('signup').style.display = 'none'
             }
