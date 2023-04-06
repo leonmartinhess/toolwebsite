@@ -34,7 +34,55 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<section class="wrapper">
+					<div class="inner">
+						<div id="auth-view">
+							<section id="signup">
+								<h2>SignUp</h2>
+								<form id="signup-form" method="post" action="#">
+									<div class="row gtr-uniform">
+										<div class="col-7 col-12-xsmall">
+											<input id="signup-username" type="text" required placeholder="Username">
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input id="signup-password" type="password" required placeholder="Password">
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Create an account" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+								<div id="signup-error"></div>
 
+							</section>
+							<section id="login">
+								<h2>Login</h2>
+								<form id="login-form" method="post" action="#">
+									<div class="row gtr-uniform">
+										<div class="col-7 col-12-xsmall">
+											<input id="login-username" type="text" required placeholder="Username">
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input id="login-password" type="password" required placeholder="Password">
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Sign in" class="primary" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+								<div id="login-error"></div>
+							</section>
+						</div>
+					</div>
+				</section>
+
+
+
+				<div id="todo-view">
 				<!-- Info -->
 					<section id="info" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -352,6 +400,7 @@
 						</div>
 					</div>
 				</section>
+				</div>
 			</div>
 
 		<!-- Footer -->
