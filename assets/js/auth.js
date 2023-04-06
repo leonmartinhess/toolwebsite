@@ -1,4 +1,4 @@
-userbase.init({ appId: '929c2cdf-7773-41aa-94bb-f16f01283581' })
+userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
     		function handleLogin(e) {
     			e.preventDefault()
 
