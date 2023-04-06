@@ -38,3 +38,16 @@ userbase.init({ appId: '929c2cdf-7773-41aa-94bb-f16f01283581' })
 			document.getElementById('todo-view').style.display = 'none'
 			document.getElementById('sidebar').style.display = 'none'
 			document.getElementById('footer').style.display = 'none'
+
+
+
+			document.getElementById("login").style.display = 'none';
+            function showSignup() {
+                document.getElementById("signup").style.display = 'block';
+                document.getElementById("login").style.display = 'none';
+            }
+
+            function showLogin() {
+                document.getElementById("login").style.display = 'block';
+                document.getElementById("signup").style.display = 'none';
+            }
