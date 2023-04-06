@@ -25,7 +25,7 @@ userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
     			document.getElementById('auth-view').style.display = 'none'
 
     			document.getElementById('todo-view').style.display = 'block'
-    			document.getElementById('sidebar').style.display = 'block'
+    			document.getElementById('sidebar').style.visibility = 'visible'
     			document.getElementById('footer').style.display = 'block'
     			document.getElementById('username').innerHTML = username
 
@@ -36,7 +36,7 @@ userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
 
 
 			document.getElementById('todo-view').style.display = 'none'
-			document.getElementById('sidebar').style.display = 'none'
+			document.getElementById('sidebar').style.visibility = 'hidden'
 			document.getElementById('footer').style.display = 'none'
 
 
