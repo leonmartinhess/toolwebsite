@@ -1,4 +1,5 @@
-userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
+            userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
+
     		function handleLogin(e) {
     			e.preventDefault()
 
@@ -21,9 +22,14 @@ userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
       				.catch((e) => document.getElementById('signup-error').innerHTML = e)
   			}
 
+            function handleLogout() {
+                 userbase.signOut()
+                    .then(() => showAuth())
+                    .catch((e) => document.getElementById('logout-error').innerText = e)
+            }
+
   			function showTodos(username) {
     			document.getElementById('auth-view').style.display = 'none'
-
     			document.getElementById('todo-view').style.display = 'block'
     			document.getElementById('sidebar').style.visibility = 'visible'
     			document.getElementById('footer').style.display = 'block'
@@ -31,10 +37,22 @@ userbase.init({ appId: 'ec3faec9-0cad-43cf-a1f2-5b625a23ea59' })
 
   			}
 
+  			function showAuth() {
+                document.getElementById('todo-view').style.display = 'none'
+                document.getElementById('auth-view').style.display = 'block'
+                document.getElementById('sidebar').style.visibility = 'hidden'
+                document.getElementById('footer').style.display = 'none'
+                document.getElementById('login-username').value = ''
+                document.getElementById('login-password').value = ''
+                document.getElementById('login-error').innerText = ''
+                document.getElementById('signup-username').value = ''
+                document.getElementById('signup-password').value = ''
+                document.getElementById('signup-error').innerText = ''
+            }
+
 			document.getElementById('login-form').addEventListener('submit', handleLogin)
   			document.getElementById('signup-form').addEventListener('submit', handleSignUp)
-
-
+  			document.getElementById('logout-button').addEventListener('click', handleLogout)
 			document.getElementById('todo-view').style.display = 'none'
 			document.getElementById('sidebar').style.visibility = 'hidden'
 			document.getElementById('footer').style.display = 'none'

@@ -27,6 +27,7 @@
 							<li><a href="#optimization">Optimization</a></li>
 							<li><a href="#drivers">Drivers</a></li>
 							<li><a href="#usbtools">USB Tools</a></li>
+							<li><input type="button" value="Logout" id="logout-button"></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,9 +35,9 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-				<section class="wrapper">
-					<div class="inner">
-						<div id="auth-view">
+				<div id="auth-view">
+					<section class="wrapper">
+						<div class="inner">
 							<div class="row">
 								<div class="col-6 col-12-medium">
 									<ul class="actions">
@@ -47,7 +48,7 @@
 							</div>
 							<section id="signup">
 								<!--<h2>SignUp</h2> -->
-								<form id="signup-form" method="post" action="#">
+								<form id="signup-form">
 									<div class="row gtr-uniform">
 										<div class="col-7 col-12-xsmall">
 											<input id="signup-username" type="text" required placeholder="Username">
@@ -63,11 +64,11 @@
 									</div>
 								</form>
 								<div id="signup-error"></div>
-
 							</section>
+
 							<section id="login">
 								<!--<h2>Login</h2> -->
-								<form id="login-form" method="post" action="#">
+								<form id="login-form">
 									<div class="row gtr-uniform">
 										<div class="col-7 col-12-xsmall">
 											<input id="login-username" type="text" required placeholder="Username">
@@ -85,12 +86,10 @@
 								<div id="login-error"></div>
 							</section>
 						</div>
-					</div>
-				</section>
-
-
-
+					</section>
+				</div>
 				<div id="todo-view">
+
 				<!-- Info -->
 					<section id="info" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -186,6 +185,7 @@
 							</div>
 						</div>
 					</section>
+
 				<!-- optimization -->
 				<section id="optimization" class="wrapper style 3 fade-up">
 					<div class="inner">
@@ -338,6 +338,7 @@
 						</div>
 					</div>
 				</section>
+
 				<!-- usbtools-->
 				<section id="usbtools" class="wrapper style 3 fade-up">
 					<div class="inner">
@@ -417,7 +418,6 @@
 					<p>Website made by <span class="rainbow rainbow_text_animated">Mahele </span>/ Design Template by <a href="http://html5up.net"><span class="rainbow rainbow_text_animated">HTML5 UP</span></a></p>
 				</div>
 			</footer>
-
 
 		<!-- Userbase -->
 			<script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
