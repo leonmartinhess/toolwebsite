@@ -16,474 +16,503 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
+		<div id="login">
+			<section class="wrapper">
 				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#info">Info</a></li>
-							<li><a href="#graphic">Graphic</a></li>
-							<li><a href="#optimization">Optimization</a></li>
-							<li><a href="#drivers">Drivers</a></li>
-							<li><a href="#usbtools">USB Tools</a></li>
-							<li><input type="button" value="Logout" id="logout-button"></li>
-						</ul>
-					</nav>
+					<section id="login">
+						<!-- Authentication -->
+							<div id="signup-form">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input id="txtEmail" type="email" required placeholder="Email">
+										<br>
+										<input id="txtPassword" type="password" required placeholder="Password">
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><button id="btnSignup" value="Create an account" />Create an account</li>
+											<li><button id="btnLogin" value="Sign in" />Sign In</li>
+										</ul>
+									</div>
+									<div id="divLoginError">
+										<div id="lblLoginErrorMessage" class="errorlabel">Error message</div>
+									</div>
+								</div>
+							</div>
+					</section>
 				</div>
 			</section>
+		</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Info -->
-					<section id="info" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>
-								<span class="rainbow rainbow_text_animated2">Tool Website Windows / Android</span>
-							</h1>
-							<p>Here you will find a small collection of useful tools for Windows and Android. Created by
-								<span class="rainbow rainbow_text_animated">Mahele</span><br/>
-								with a template from
-								<a href="http://html5up.net">HTML5 UP</a> which is released for free under the
-								<a href="http://html5up.net/license">Creative Commons License</a>.
-							</p>
-
-							<ul class="actions">
-								<li>
-									<a href="https://github.com/leonmartinhess" class="button scrolly">
-										<span class="rainbow rainbow_text_animated2">My Github</span>
-									</a>
-								</li>
+		<div id="app">
+			<!-- Sidebar -->
+				<section id="sidebar">
+					<div class="inner">
+						<nav>
+							<ul>
+								<li><a href="#info">Info</a></li>
+								<li><a href="#graphic">Graphic</a></li>
+								<li><a href="#optimization">Optimization</a></li>
+								<li><a href="#drivers">Drivers</a></li>
+								<li><a href="#usbtools">USB Tools</a></li>
+								<li><button value="Logout" id="btnLogout">Logout</li>
 							</ul>
-						</div>
-					</section>
+						</nav>
+					</div>
+				</section>
 
-				<!-- graphic-->
-					<section id="graphic" class="wrapper style 3 fade-up">
-						<div class="inner">
-							<h3><span class="rainbow rainbow_text_animated2">Graphic</span></h3>
-							<div class="features card text-white bg-box mb-3">
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4><a href="https://www.guru3d.com/files-details/display-driver-uninstaller-download.html">Display Driver Uninstaller</a></h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows 7 - Windows 11</li>
-									</ol>
-									<img alt="ddu" src="assets/img/ddu.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/DDU.exe" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">NVCleanstall</a></h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows 7 - Windows 11</li>
-									</ol>
-									<img alt="nvcleanstall" src="assets/img/nvcleanstall.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/NVCleanstall.exe" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4>MSI Util V3</h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows 10 / 11</li>
-									</ol>
-									<img alt="msi" src="assets/img/msi.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/MSI_util_v3.zip" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4><a href="https://www.msi.com/Landing/afterburner/graphics-cards">MSI Afterburner</a></h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows 10 / 11</li>
-									</ol>
-									<img alt="msi-afterburner" src="assets/img/msi-afterburner.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/MSIAfterburnerSetup.zip" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4><a href="https://github.com/Orbmu2k/nvidiaProfileInspector">NvidiaProfileInspector </a></h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows 10 / 11</li>
-									</ol>
-									<img alt="nvidiainspector" src="assets/img/nvidiainspector.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/nvidiaProfileInspector.zip" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
-								<section>
-									<span class="icon solid major fa-download"></span>
-									<h4><a href="https://www.techpowerup.com/gpuz/">GPU-Z</a></h4>
-									<u>Supported Versions:</u>
-									<ol>
-										<li type="disc">Windows XP - 11</li>
-									</ol>
-									<img alt="gpu-z" src="assets/img/gpu-z.PNG">
-									<ul class="actions">
-										<li>
-											<a href="dl/GPU-Z.exe" class="button card text-white bg-box mb-3">
-												<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-											</a>
-										</li>
-									</ul>
-								</section>
+			<!-- Wrapper -->
+				<div id="wrapper">
+					<!-- Info -->
+						<section id="info" class="wrapper style1 fullscreen fade-up">
+							<div class="inner">
+								<h1>
+									<span class="rainbow rainbow_text_animated2">Tool Website Windows / Android</span>
+								</h1>
+								<p>Here you will find a small collection of useful tools for Windows and Android. Created by
+									<span class="rainbow rainbow_text_animated">Mahele</span><br/>
+									with a template from
+									<a href="http://html5up.net">HTML5 UP</a> which is released for free under the
+									<a href="http://html5up.net/license">Creative Commons License</a>.
+								</p>
 
+								<ul class="actions">
+									<li>
+										<a href="https://github.com/leonmartinhess" class="button scrolly">
+											<span class="rainbow rainbow_text_animated2">My Github</span>
+										</a>
+									</li>
+								</ul>
 							</div>
-						</div>
-					</section>
+						</section>
 
-				<!-- optimization -->
-				<section id="optimization" class="wrapper style 3 fade-up">
-					<div class="inner">
-						<h3><span class="rainbow rainbow_text_animated2">Optimization</span></h3>
-						<div class="features card text-white bg-box mb-3">
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4>Hibernate Tool</h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - Windows 11</li>
-								</ol>
-								<img alt="hibernate" src="assets/img/hibernate.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/Hibernate Tool.bat" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.speedguide.net/downloads.php">TCPOptimizer</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows XP - Windows 11</li>
-								</ol>
-								<img alt="tcpoptimizer" src="assets/img/tcpoptimizer.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/TCPOptimizer.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://wpd.app/">Windows Privacy Dashboard</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - Windows 11</li>
-								</ol>
-								<img alt="wpd" src="assets/img/wpd.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/wpd.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.malwarebytes.com/adwcleaner">AdwCleaner</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - Windows 11</li>
-								</ol>
-								<img alt="adwcleaner" src="assets/img/adwcleaner.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/adwcleaner.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/auraside/HoneCtrl">HoneCtrl</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 10 / 11</li>
-								</ol>
-								<img alt="honectrl" src="assets/img/honectrl.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/HoneCtrl.bat" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns">Autoruns</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="autoruns" src="assets/img/autoruns.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/Autoruns.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/hellzerg/optimizer">Hellzerg Optimizer</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="optimizer" src="assets/img/optimizer.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/Optimizer.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/0x192/universal-android-debloater">Universal Android Debloater</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 10 / 11</li>
-								</ol>
-								<img alt="uad" src="assets/img/uad.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/uad_gui-windows.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-						</div>
+					<!-- graphic-->
+						<section id="graphic" class="wrapper style 3 fade-up">
+							<div class="inner">
+								<h3><span class="rainbow rainbow_text_animated2">Graphic</span></h3>
+								<div class="features card text-white bg-box mb-3">
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.guru3d.com/files-details/display-driver-uninstaller-download.html">Display Driver Uninstaller</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="ddu" src="assets/img/ddu.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/DDU.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/">NVCleanstall</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="nvcleanstall" src="assets/img/nvcleanstall.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/NVCleanstall.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4>MSI Util V3</h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="msi" src="assets/img/msi.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/MSI_util_v3.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.msi.com/Landing/afterburner/graphics-cards">MSI Afterburner</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="msi-afterburner" src="assets/img/msi-afterburner.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/MSIAfterburnerSetup.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/Orbmu2k/nvidiaProfileInspector">NvidiaProfileInspector </a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="nvidiainspector" src="assets/img/nvidiainspector.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/nvidiaProfileInspector.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.techpowerup.com/gpuz/">GPU-Z</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows XP - 11</li>
+										</ol>
+										<img alt="gpu-z" src="assets/img/gpu-z.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/GPU-Z.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- optimization -->
+						<section id="optimization" class="wrapper style 3 fade-up">
+							<div class="inner">
+								<h3><span class="rainbow rainbow_text_animated2">Optimization</span></h3>
+								<div class="features card text-white bg-box mb-3">
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4>Hibernate Tool</h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="hibernate" src="assets/img/hibernate.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/Hibernate Tool.bat" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.speedguide.net/downloads.php">TCPOptimizer</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows XP - Windows 11</li>
+										</ol>
+										<img alt="tcpoptimizer" src="assets/img/tcpoptimizer.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/TCPOptimizer.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://wpd.app/">Windows Privacy Dashboard</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="wpd" src="assets/img/wpd.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/wpd.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.malwarebytes.com/adwcleaner">AdwCleaner</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="adwcleaner" src="assets/img/adwcleaner.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/adwcleaner.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/auraside/HoneCtrl">HoneCtrl</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="honectrl" src="assets/img/honectrl.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/HoneCtrl.bat" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns">Autoruns</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="autoruns" src="assets/img/autoruns.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/Autoruns.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/hellzerg/optimizer">Hellzerg Optimizer</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="optimizer" src="assets/img/optimizer.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/Optimizer.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/0x192/universal-android-debloater">Universal Android Debloater</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="uad" src="assets/img/uad.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/uad_gui-windows.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+								</div>
+							</div>
+						</section>
+
+					<!-- drivers-->
+						<section id="drivers" class="wrapper style 3 fade-up">
+							<div class="inner">
+								<h3><span class="rainbow rainbow_text_animated2">Drivers</span></h3>
+								<div class="features card text-white bg-box mb-3">
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/abbodi1406/vcredist">Visual C++ Redistributable AIO</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="visualc" src="assets/img/visualc.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/VisualCppRedist_AIO.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/lostindark/DriverStoreExplorer">DriverStoreExplorer</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - Windows 11</li>
+										</ol>
+										<img alt="driverstore" src="assets/img/driverstore.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/DriverStoreExplorer.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.glenn.delahoy.com/snappy-driver-installer-origin/">Snappy Driver Installer Origin</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows XP - 11</li>
+										</ol>
+										<img alt="sdio" src="assets/img/sdio.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/SDIO.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- usbtools-->
+						<section id="usbtools" class="wrapper style 3 fade-up">
+							<div class="inner">
+								<h3><span class="rainbow rainbow_text_animated2">USB Tools</span></h3>
+								<div class="features card text-white bg-box mb-3">
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.microsoft.com/en-us/software-download/windows10">MediaCreationTool Windows 10</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="mediacreationtoolwin10" src="assets/img/mediacreationtoolwin10.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/MediaCreationToolWin10.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.microsoft.com/en-us/software-download/windows11">MediaCreationTool Windows 11</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="mediacreationtoolwin11" src="assets/img/mediacreationtoolwin11.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/MediaCreationToolWin11.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://rufus.ie">Rufus</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="rufus" src="assets/img/rufus.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/rufus.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://github.com/ventoy/Ventoy">Ventoy</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="ventoy" src="assets/img/ventoy.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/ventoy.zip" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.balena.io/etcher">balenaEtcher Portable</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 10 / 11</li>
+										</ol>
+										<img alt="balenaEtcher" src="assets/img/balenaEtcher.PNG">
+										<ul class="actions">
+											<li>
+												<a href="https://www.balena.io/etcher#download-etcher" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<span class="icon solid major fa-download"></span>
+										<h4><a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a></h4>
+										<u>Supported Versions:</u>
+										<ol>
+											<li type="disc">Windows 7 - 11</li>
+										</ol>
+										<img alt="raspberry" src="assets/img/raspberry.PNG">
+										<ul class="actions">
+											<li>
+												<a href="dl/raspberry.exe" class="button card text-white bg-box mb-3">
+													<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
+												</a>
+											</li>
+										</ul>
+									</section>
+								</div>
+							</div>
+						</section>
 					</div>
-				</section>
 
-				<!-- drivers-->
-				<section id="drivers" class="wrapper style 3 fade-up">
-					<div class="inner">
-						<h3><span class="rainbow rainbow_text_animated2">Drivers</span></h3>
-						<div class="features card text-white bg-box mb-3">
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/abbodi1406/vcredist">Visual C++ Redistributable AIO</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - Windows 11</li>
-								</ol>
-								<img alt="visualc" src="assets/img/visualc.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/VisualCppRedist_AIO.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/lostindark/DriverStoreExplorer">DriverStoreExplorer</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - Windows 11</li>
-								</ol>
-								<img alt="driverstore" src="assets/img/driverstore.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/DriverStoreExplorer.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.glenn.delahoy.com/snappy-driver-installer-origin/">Snappy Driver Installer Origin</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows XP - 11</li>
-								</ol>
-								<img alt="sdio" src="assets/img/sdio.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/SDIO.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-							</section>
+					<!-- Footer -->
+						<footer id="footer" class="wrapper style3 fade-up">
+							<div class="inner">
+								<p>Website made by
+									<a href="https://github.com/leonmartinhess">
+										<span class="rainbow rainbow_text_animated">Mahele </span>
+									</a>
+									/ Design Template by
+									<a href="http://html5up.net">
+										<span class="rainbow rainbow_text_animated">HTML5 UP</span>
+									</a>
+								</p>
+							</div>
+						</footer>			
+		</div>
 
-						</div>
-					</div>
-				</section>
-
-				<!-- usbtools-->
-				<section id="usbtools" class="wrapper style 3 fade-up">
-					<div class="inner">
-						<h3><span class="rainbow rainbow_text_animated2">USB Tools</span></h3>
-						<div class="features card text-white bg-box mb-3">
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.microsoft.com/en-us/software-download/windows10">MediaCreationTool Windows 10</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="mediacreationtoolwin10" src="assets/img/mediacreationtoolwin10.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/MediaCreationToolWin10.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.microsoft.com/en-us/software-download/windows11">MediaCreationTool Windows 11</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="mediacreationtoolwin11" src="assets/img/mediacreationtoolwin11.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/MediaCreationToolWin11.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://rufus.ie">Rufus</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="rufus" src="assets/img/rufus.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/rufus.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://github.com/ventoy/Ventoy">Ventoy</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="ventoy" src="assets/img/ventoy.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/ventoy.zip" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.balena.io/etcher">balenaEtcher Portable</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 10 / 11</li>
-								</ol>
-								<img alt="balenaEtcher" src="assets/img/balenaEtcher.PNG">
-								<ul class="actions">
-									<li>
-										<a href="https://www.balena.io/etcher#download-etcher" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-							<section>
-								<span class="icon solid major fa-download"></span>
-								<h4><a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a></h4>
-								<u>Supported Versions:</u>
-								<ol>
-									<li type="disc">Windows 7 - 11</li>
-								</ol>
-								<img alt="raspberry" src="assets/img/raspberry.PNG">
-								<ul class="actions">
-									<li>
-										<a href="dl/raspberry.exe" class="button card text-white bg-box mb-3">
-											<span class="rainbow rainbow_text_animated2">DOWNLOAD</span>
-										</a>
-									</li>
-								</ul>
-							</section>
-						</div>
-					</div>
-				</section>
-				</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style3 fade-up">
-				<div class="inner">
-					<p>Website made by
-						<a href="https://github.com/leonmartinhess">
-							<span class="rainbow rainbow_text_animated">Mahele </span>
-						</a>
-						/ Design Template by
-						<a href="http://html5up.net">
-							<span class="rainbow rainbow_text_animated">HTML5 UP</span>
-						</a>
-					</p>
-				</div>
-			</footer>
-
-		<!-- Userbase -->
-
+		<!-- Firebase -->
+			<script src="assets/js/auth.js"></script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
