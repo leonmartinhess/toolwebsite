@@ -221,3 +221,70 @@
   
   
   /* Downloads for USB-Tools */
+
+  document.getElementById("mediacreationtoolwin10").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/MediaCreationToolWin10.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("mediacreationtoolwin11").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/MediaCreationToolWin11.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("rufus").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/rufus.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("ventoy").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/ventoy.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("balenaEtcher").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/balenaEtcher-Portable.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("raspberry").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/raspberry.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+  
