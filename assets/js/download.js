@@ -21,6 +21,8 @@
   const storage = getStorage(app);
   const storageRef = ref(storage);
 
+  /* Downloads for Graphic */
+
   document.getElementById("ddu").addEventListener('click', function(){
     getDownloadURL(ref(storage, 'dl/DDU.exe'))
     .then((url) => {
@@ -86,3 +88,96 @@
       // Handle any errors
     });
   })
+
+
+
+  /* Downloads for Optimization */
+
+  document.getElementById("hibernate").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Hibernate Tool.bat'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("tcpoptimizer").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/TCPOptimizer.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("wpd").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/wpd.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("adwcleaner").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/adwcleaner.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("honectrl").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/HoneCtrl.bat'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("autoruns").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Autoruns.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("optimizer").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Optimizer.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("uad").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/uad_gui-windows.exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
