@@ -44,7 +44,7 @@
   })
 
   document.getElementById("msi").addEventListener('click', function(){
-    getDownloadURL(ref(storage, 'dl/MSI_util_V3.zip'))
+    getDownloadURL(ref(storage, 'dl/MSI-util-V3.zip'))
     .then((url) => {
       console.log(url);
       window.open(url, '_self');
