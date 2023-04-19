@@ -181,3 +181,43 @@
     });
   })
 
+
+
+  /* Downloads for Drivers */
+
+  document.getElementById("visualc").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/VisualCppRedist_AIO.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("driverstore").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/DriverStoreExplorer.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("sdio").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/SDIO.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+  
+  
+  
+  /* Downloads for USB-Tools */
