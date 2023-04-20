@@ -20,7 +20,7 @@
 			<section class="wrapper">
 				<div class="inner">
 					<section id="login">
-						<div id="lblAuthState"></div>
+						<div>You're not logged in.</div>
 						<!-- Authentication -->
 							<div id="signup-form">
 								<div class="row gtr-uniform">
@@ -69,26 +69,28 @@
 								<h1>
 									<span class="rainbow rainbow_text_animated2">Tool Website Windows / Android</span>
 								</h1>
-								<p>Here you will find a small collection of useful tools for Windows and Android.<br> Created by
-									<span class="rainbow rainbow_text_animated">Mahele</span>
-									with a template from
-									<a href="http://html5up.net">HTML5 UP</a> and 
-									<a href="https://firebase.google.com/">Firebase Services.</a>
-								</p>
-
-								<ul class="actions">
-									<li>
-										<a href="https://github.com/leonmartinhess" class="button scrolly">
-											<span class="rainbow rainbow_text_animated2">My Github</span>
-										</a>
-									</li>
-									<li>
-										<button value="Logout" id="btnLogout">
-											<span class="rainbow rainbow_text_animated2">Logout</span>
-									</li>
-								</ul>
+								<div class="features card text-white bg-box mb-3">
+									<section>
+										<p>Here you will find a small collection of useful tools for Windows and Android. Created by
+											<a class="rainbow rainbow_text_animated" href="https://github.com/leonmartinhess">Mahele </a>
+											with a template from
+											<a href="http://html5up.net">HTML5 UP</a> and 
+											<a href="https://firebase.google.com/">Firebase Services.</a>
+										</p>
+									</section>	
+									<section>
+										<p id="lblAuthState"></p>
+										<ul class="actions">
+											<li>
+												<button value="Logout" id="btnLogout">
+													<span class="rainbow rainbow_text_animated2">Logout</span>
+											</li>
+										</ul>
+									</section>
+								</div>
 							</div>
 						</section>
+						
 
 					<!-- graphic-->
 						<section id="graphic" class="wrapper style 3 fade-up">
