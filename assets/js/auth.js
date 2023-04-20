@@ -81,8 +81,29 @@
 	if (error.code == AuthErrorCodes.INVALID_PASSWORD) {
 	  document.getElementById("lblLoginErrorMessage").innerHTML = `Wrong password. Try again.`
 	}
+	else if(document.getElementById("txtEmail").value == "") {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Please enter Email and password.`      
+	} 
+	else if(document.getElementById("txtPassword").value == "") {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Please enter Email and password.`
+	}
+	else if(error.code == AuthErrorCodes.EMAIL_EXISTS) {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Email already in use. Try again or sign in.`
+	}
+	else if(error.code == AuthErrorCodes.NETWORK_REQUEST_FAILED) {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Network request failed. Please check your internet connection.`
+	}
+	else if(error.code == AuthErrorCodes.WEAK_PASSWORD) {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Your password should be at least 6 characters. Try again.`	
+	}
+	else if(error.code == AuthErrorCodes.INVALID_EMAIL) {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = 'Invalid Email. Try again.'
+	}
+	else if(error.code == AuthErrorCodes.USER_DELETED) {
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `User not found. Please create an account.`
+	}
 	else {
-	  document.getElementById("lblLoginErrorMessage").innerHTML = `Error: ${error.message}`      
+	  document.getElementById("lblLoginErrorMessage").innerHTML = `Error: ${error.message}`
 	}
 	}
 
