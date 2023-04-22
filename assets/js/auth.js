@@ -1,5 +1,5 @@
-// Import the functions you need from the SDKs you need
-			  
+
+  // Import all functions that are needed for AppCheck and Auth			  
   import {
 	initializeApp
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
@@ -29,7 +29,6 @@
   For Firebase JS SDK v7.20.0 and later, measurementId is optional
   */
   
-
   // Initialize Firebase
   const app = initializeApp({
 	  apiKey: "AIzaSyBXuDPrHAfTIPu9CHVtrNy-yNBlXIoQCE8",
@@ -41,6 +40,7 @@
 	  measurementId: "G-NHZZM9DL2T"
 	});
 
+  // Initialite Analytics for Firebase
   const analytics = getAnalytics(app);
 
   // AppCheck with reCAPTCHAV3 to protect the backend Firebase Services (Storage)
@@ -51,6 +51,7 @@
 	isTokenAutoRefreshEnabled: true
   });
 
+  // Login into existing account using email/password
   const loginEmailPassword = async () => {
 	const loginEmail = document.getElementById("txtEmail").value
 	const loginPassword = document.getElementById("txtPassword").value
@@ -78,12 +79,14 @@
 	} 
 	}
 
+  // Hides login/isgnup error when visiting the site
   export const hideLoginError = () => {
 	document.getElementById("divLoginError").style.display = 'none'
 	document.getElementById("lblLoginErrorMessage").innerHTML = ''
   }
   hideLoginError();
 
+  // Shows the login/signup error
   export const showLoginError = (error) => {
 	document.getElementById("divLoginError").style.display = 'block'    
 	if (error.code == AuthErrorCodes.INVALID_PASSWORD) {
@@ -115,23 +118,25 @@
 	}
 	}
 
- export const showLoginForm = () => {
+  // Shows the login/auth view	
+  export const showLoginForm = () => {
 	document.getElementById("login").style.display = 'block'
 	document.getElementById("app").style.display = 'none'
   }
   
- export const showApp = () => {
+  // Shows the app view
+  export const showApp = () => {
 	document.getElementById("login").style.display = 'none'
 	document.getElementById("app").style.display = 'block'
   }
 
   // Log out
- const logout = async () => {
+  const logout = async () => {
 	await signOut(auth);
   }
 
   // Monitor auth state
- const monitorAuthState = async () => {
+  const monitorAuthState = async () => {
 	onAuthStateChanged(auth, user => {
 	  if (user) {
 		console.log(user)
@@ -146,14 +151,17 @@
 	})
   }
 
-
- export const showLoginState = (user) => {
+  // Shows loginstate
+  export const showLoginState = (user) => {
 	//document.getElementById("lblAuthState").innerHTML = `You're logged in as ${user.displayName} (uid: ${user.uid}, email: ${user.email}) `
 	document.getElementById("lblAuthState").innerHTML = `You're logged in with the Email: ${user.email} `
   }
 
+  // Click listeners for the signup/login/logout buttons
   document.getElementById("btnLogin").addEventListener("click", loginEmailPassword) 
   document.getElementById("btnSignup").addEventListener("click", createAccount)
   document.getElementById("btnLogout").addEventListener("click", logout)
+
+  // Initialize Auth and call monitorAuthState
   const auth = getAuth(app);
   monitorAuthState();

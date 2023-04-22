@@ -1,5 +1,7 @@
+ 
+  // Import all functions that are needed for storage
   import {
-	initializeApp
+	  initializeApp
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
  
   import {
@@ -8,16 +10,18 @@
     getDownloadURL,
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js"
   
-  const firebaseConfig = {
-    apiKey: "AIzaSyBXuDPrHAfTIPu9CHVtrNy-yNBlXIoQCE8",
-    authDomain: "toolwebsite-ed574.firebaseapp.com",
-    projectId: "toolwebsite-ed574",
-    storageBucket: "toolwebsite-ed574.appspot.com",
-    messagingSenderId: "103988189196",
-    appId: "1:103988189196:web:5c1513ea612b78eeb8f629",
-    measurementId: "G-NHZZM9DL2T"
-  }; 
-  const app = initializeApp(firebaseConfig); 
+  // Initialize Firebase
+  const app = initializeApp({
+	  apiKey: "AIzaSyBXuDPrHAfTIPu9CHVtrNy-yNBlXIoQCE8",
+	  authDomain: "toolwebsite-ed574.firebaseapp.com",
+	  projectId: "toolwebsite-ed574",
+	  storageBucket: "toolwebsite-ed574.appspot.com",
+	  messagingSenderId: "103988189196",
+	  appId: "1:103988189196:web:5c1513ea612b78eeb8f629",
+	  measurementId: "G-NHZZM9DL2T"
+	});
+
+  // Initialize Storage and storageRef
   const storage = getStorage(app);
   const storageRef = ref(storage);
 
