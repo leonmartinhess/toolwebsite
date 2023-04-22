@@ -3,7 +3,12 @@
   import {
 	initializeApp
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-  
+
+  import {
+	initializeAppCheck,
+	ReCaptchaV3Provider,
+  } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app-check.js";
+
   import {
 	getAnalytics
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
@@ -24,7 +29,9 @@
   For Firebase JS SDK v7.20.0 and later, measurementId is optional
   */
   
-  const firebaseConfig = {
+
+  // Initialize Firebase
+  const app = initializeApp({
 	  apiKey: "AIzaSyBXuDPrHAfTIPu9CHVtrNy-yNBlXIoQCE8",
 	  authDomain: "toolwebsite-ed574.firebaseapp.com",
 	  projectId: "toolwebsite-ed574",
@@ -32,12 +39,17 @@
 	  messagingSenderId: "103988189196",
 	  appId: "1:103988189196:web:5c1513ea612b78eeb8f629",
 	  measurementId: "G-NHZZM9DL2T"
-	};
-  
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+	});
+
   const analytics = getAnalytics(app);
+
+  // AppCheck with reCAPTCHAV3 to protect the backend Firebase Services (Storage)
+  const appCheck = initializeAppCheck(app, {
+	provider: new ReCaptchaV3Provider('6LelfawlAAAAANIlsSbNvIatTSbWiQq_kDfH2Dfq'),
+	// Optional argument. If true, the SDK automatically refreshes App Check
+	// tokens as needed.
+	isTokenAutoRefreshEnabled: true
+  });
 
   const loginEmailPassword = async () => {
 	const loginEmail = document.getElementById("txtEmail").value
