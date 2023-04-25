@@ -223,7 +223,7 @@
   })
 
   document.getElementById("samsung-usb-driver").addEventListener('click', function(){
-    getDownloadURL(ref(storage, 'dl/SAMSUNG-USB-DRIVER:exe'))
+    getDownloadURL(ref(storage, 'dl/SAMSUNG-USB-Driver.exe'))
     .then((url) => {
       console.log(url);
       window.open(url, '_self');
