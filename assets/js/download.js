@@ -221,6 +221,17 @@
       // Handle any errors
     });
   })
+
+  document.getElementById("samsung-usb-driver").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/SAMSUNG-USB-DRIVER:exe'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
   
   
   
