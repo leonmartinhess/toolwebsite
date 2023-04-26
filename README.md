@@ -5,13 +5,3 @@ This is a website with useful Windows and Android tools! The website is using th
 ## Link: ##
 
 https://toolwebsite.pages.dev/
-
-## Test Account:
-
-### EMail: 
-test@byom.de
-
-### Password: 
-123456
-
-<sub>(Byom.de is also a good service for disposable emails, so feel free to check them out! | [German](https://www.byom.de/) / [English](https://www.byom.de/trashmails/))</sub>
