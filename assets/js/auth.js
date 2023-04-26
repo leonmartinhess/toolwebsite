@@ -20,6 +20,7 @@
 	createUserWithEmailAndPassword,
 	signInWithEmailAndPassword,
 	AuthErrorCodes,
+	signInAnonymously,
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
   
   /* 
@@ -51,19 +52,31 @@
 	isTokenAutoRefreshEnabled: true
   });
 
+  // Sign in without email and password
+  const signAnon = async () => {
+	try {
+	  await signInAnonymously(auth)
+	}
+	catch {
+	  console.log(`There was an error: ${error}`)
+	  showLoginError(error)
+	}
+  }
+
+  /*  
   // Login into existing account using email/password
   const loginEmailPassword = async () => {
 	const loginEmail = document.getElementById("txtEmail").value
 	const loginPassword = document.getElementById("txtPassword").value
 
 	try {
-	   await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+	  await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
 	}
 	catch(error) {
-	   console.log(`There was an error: ${error}`)
-	   showLoginError(error)
+	  console.log(`There was an error: ${error}`)
+	  showLoginError(error)
 	}
-	}
+  }
 
   // Create new account using email/password
   const createAccount = async () => {
@@ -77,8 +90,8 @@
 	  console.log(`There was an error: ${error}`)
 	  showLoginError(error)
 	} 
-	}
-
+  }
+  */
   // Hides login/isgnup error when visiting the site
   export const hideLoginError = () => {
 	document.getElementById("divLoginError").style.display = 'none'
@@ -154,12 +167,14 @@
   // Shows loginstate
   export const showLoginState = (user) => {
 	//document.getElementById("lblAuthState").innerHTML = `You're logged in as ${user.displayName} (uid: ${user.uid}, email: ${user.email}) `
-	document.getElementById("lblAuthState").innerHTML = `You're logged in with the Email: ${user.email} `
+	//document.getElementById("lblAuthState").innerHTML = `You're logged in with the Email: ${user.email} `
+	document.getElementById("lblAuthState").innerHTML = `You're logged in with uid: ${user.uid}`
   }
 
   // Click listeners for the signup/login/logout buttons
-  document.getElementById("btnLogin").addEventListener("click", loginEmailPassword) 
-  document.getElementById("btnSignup").addEventListener("click", createAccount)
+  //document.getElementById("btnLogin").addEventListener("click", loginEmailPassword) 
+  //document.getElementById("btnSignup").addEventListener("click", createAccount)
+  document.getElementById("btnAnon").addEventListener("click", signAnon)
   document.getElementById("btnLogout").addEventListener("click", logout)
 
   // Initialize Auth and call monitorAuthState
