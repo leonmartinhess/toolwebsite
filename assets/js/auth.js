@@ -17,8 +17,8 @@
 	getAuth,
 	onAuthStateChanged, 
 	signOut,
-	createUserWithEmailAndPassword,
-	signInWithEmailAndPassword,
+//	createUserWithEmailAndPassword,
+//	signInWithEmailAndPassword,
 	AuthErrorCodes,
 	signInAnonymously,
   } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
