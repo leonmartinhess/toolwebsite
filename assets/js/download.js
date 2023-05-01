@@ -302,4 +302,26 @@
       // Handle any errors
     });
   })
+
+  document.getElementById("odin").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Odin3.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("heimdall").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/heimdall-suite.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
   
