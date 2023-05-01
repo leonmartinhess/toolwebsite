@@ -5,3 +5,11 @@ This is a website with useful Windows and Android tools! The website is using th
 ## Link: ##
 
 https://toolwebsite.pages.dev/
+
+## Licenses: ##
+
+Downloads
+- https://github.com/leonmartinhess/toolwebsite/tree/main/LICENSES
+
+Template
+- https://html5up.net/license
