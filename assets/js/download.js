@@ -97,8 +97,8 @@
 
   /* Downloads for Optimization */
 
-  document.getElementById("hibernate").addEventListener('click', function(){
-    getDownloadURL(ref(storage, 'dl/Hibernate Tool.bat'))
+  document.getElementById("fr33thy").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/FR33THY Optimization Pack.zip'))
     .then((url) => {
       console.log(url);
       window.open(url, '_self');
