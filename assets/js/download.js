@@ -185,6 +185,28 @@
     });
   })
 
+  document.getElementById("atlas").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Atlas-Playbook.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
+  document.getElementById("revi").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Revi-Playbook.zip'))
+    .then((url) => {
+      console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+    });
+  })
+
 
 
   /* Downloads for Drivers */
