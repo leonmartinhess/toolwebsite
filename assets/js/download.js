@@ -25,6 +25,34 @@
   const storage = getStorage(app);
   const storageRef = ref(storage);
 
+  /* Downloads for Featured */
+
+  document.getElementById("simplecc").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/SimpleCC.zip'))
+    .then((url) => {
+      //console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+      console.log(`There was an error: ${error}`)
+    });
+  })
+
+  document.getElementById("honkai").addEventListener('click', function(){
+    getDownloadURL(ref(storage, 'dl/Honkai-Unlocker.zip'))
+    .then((url) => {
+      //console.log(url);
+      window.open(url, '_self');
+    })
+    .catch((error) => {
+      // Handle any errors
+      console.log(`There was an error: ${error}`)
+    });
+  })
+
+
+
   /* Downloads for Graphic */
 
   document.getElementById("ddu").addEventListener('click', function(){
